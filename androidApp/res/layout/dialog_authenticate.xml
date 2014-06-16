@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp" >
+
+        <include
+            android:id="@+id/header_auth"
+            layout="@layout/dialog_header" />
+
+        <Button
+            android:id="@+id/New_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="62dp"
+            android:onClick="enter"
+            android:text="New User" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/New_user"
+            android:layout_alignBottom="@+id/New_user"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/New_user"
+            android:text="Enter" />
+
+        <EditText
+            android:id="@+id/auth_pass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_above="@+id/New_user"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/background_round_corner"
+            android:ems="10"
+            android:hint="@string/password"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/auth_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_above="@+id/auth_pass"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background_round_corner"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+</LinearLayout>

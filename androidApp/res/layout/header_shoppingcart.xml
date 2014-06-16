@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootHeader"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@android:color/holo_orange_light" >
+
+    <ImageView
+        android:id="@+id/imageViewOverflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="overflowPressed"
+        android:src="@drawable/ic_action_overflow" />
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageViewCart"
+        android:layout_toRightOf="@+id/imageViewOverflow"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:textSize="@dimen/header_textsize"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageViewCart"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:src="@drawable/shoppingcart"
+        android:visibility="invisible" />
+
+</RelativeLayout>

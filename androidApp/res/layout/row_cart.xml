@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:padding="6dip"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+         />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="15dp"
+        android:layout_height="150dp"
+       
+        android:layout_alignTop="@+id/product_img"
+        android:layout_marginLeft="18dp"
+        android:layout_toLeftOf="@+id/product_price"
+        android:layout_toRightOf="@+id/product_img"
+        android:ellipsize="none"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/product_total"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/product_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/product_quantity"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignBottom="@+id/product_name"
+        android:layout_alignTop="@+id/product_price"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/product_total"
+        android:text="T" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product_name"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/product_quantity"
+        android:text="Text" />
+
+</RelativeLayout> 
